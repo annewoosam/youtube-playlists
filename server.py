@@ -39,7 +39,7 @@ def all_playlists():
 
     last_updated=[q[0] for q in db.session.query(Playlist.last_updated).all()]
 
-    return render_template('playlists.html', playlist_id=playlist_id, channel_name=channel_name, playlist_name=playlist_name, number_of_videos=number_of_vides,last_updated=last_updated)
+    return render_template('playlists.html', playlist_id=playlist_id, channel_name=channel_name, playlist_name=playlist_name, number_of_videos=number_of_videos,last_updated=last_updated)
 
 if __name__ == '__main__':
 

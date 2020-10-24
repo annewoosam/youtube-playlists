@@ -19,7 +19,6 @@
   <!-- CSS only -->
 
   <link rel="stylesheet" type="text/css" HREF="../css/styles.css">
-
 </head>
 
 <body>
@@ -41,7 +40,7 @@
 
     </thead>
 
-      <td>Videos by Playlist</td><td><canvas id="playlists" width="400" height="150"></canvas></td>
+      <td>Playlist Info</td><td><canvas id="playlist" width="400" height="150"></canvas></td>
 
      </td>
 
@@ -53,7 +52,7 @@
         // bar chart data
 
             var barData = {
-                labels : [ {{ playlist_name }} ],
+                labels : ['Beginner','Advanced','Top Players'],
                 datasets : [
                     {
                         fillColor : "#48A497",
@@ -65,11 +64,11 @@
 
             // get bar chart canvas
 
-            var playlists = document.getElementById("playlists").getContext("2d");
+            var playlist = document.getElementById("playlist").getContext("2d");
 
             // draw bar chart
 
-            new Chart(playlists).Bar(barData);
+            new Chart(playlist).Bar(barData);
 
 
        </script>

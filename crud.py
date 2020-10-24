@@ -19,7 +19,7 @@ def create_playlist(channel_name, playlist_name, number_of_videos, last_updated)
 
     return playlist
 
-def get_playlist():
+def get_playlists():
     """Return all rows of playlist monthly data."""
 
     return Playlist.query.all()

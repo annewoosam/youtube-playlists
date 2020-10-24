@@ -31,10 +31,10 @@ with open('data/playlist.json') as f:
 playlist_in_db = []
 
 for playlist in playlist_data:
-    channel_name, playlist_name, number_of_videos, last_updated (
+    channel_name, playlist_name, number_of_videos,last_updated= (
                                    playlist['channel_name'],
                                    playlist['playlist_name'],
-                                   playlist['number_of_videos,
+                                   playlist['number_of_videos'],
                                    playlist['last_updated'])
 
     db_playlist = crud.create_playlist(
